@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>HTML Quiz</title>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="javascript-quiz.html">JavaScript Quiz</a></li>
+            <li><a href="html-css-quiz.html">HTML/CSS Quiz</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="custom-dialog" class="confirmation-dialog">
+        <div class="dialog-content">
+            <p>Do you want to exit the quiz?</p>
+            <div>
+                <button id="confirm-yes">Yes</button>
+                <button id="confirm-no">No</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1>HTML Quiz</h1>
+        <div class="grid-container">
+            <!-- <div class="grid-item">
+                <img src="assets/images/js_logo.png" alt="javascript">-->
+            <!--Start Quiz Button-->
+            <!--<div class="start_btn"><button class="js">Start JavaScript Quiz</button></div>
+            </div> -->
+            <div class="grid-item">
+                <img src="assets/images/html_css.png" alt="html/css">
+                <!--Start Quiz Button-->
+                <div class="start_btn"><button class="htmlcss">Start HTML/CSS Quiz</button></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Info box-->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Some Rules of this Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will have only <span>20 seconds </span> per each question.</div>
+            <div class="info">2. Once you selected your answer, you can't reselect.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <div class="user_box">
+        <form>
+            <div class="info_title">
+                <span>Please Enter Your Information</span>
+            </div>
+            <div class="info_list">
+
+                <div class="info">
+                    <label> Name: </label>
+                    <input class="option user_name" type="text">
+
+                </div>
+                <div class="info">
+                    <label> Email: </label>
+                    <input class="option user_email" type="email">
+                </div>
+
+            </div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button type="submit" class="start">Start</button>
+            </div>
+        </form>
+    </div>
+
+    <!--Quiz Box-->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Programming Quiz Game!</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">20</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <span>How to write an IF statement in JavaScript?</span>
+            </div>
+            <div class="option_list">
+                <div class="option">
+                    <span>if i = 5 then</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>if i == 5 then</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>if (i == 5)</span>
+                </div>
+                <div class="option">
+                    <span>if i = 5</span>
+                </div>
+            </div>
+            <h3 style="visibility: hidden">asdad</h3>
+        </section>
+
+        <!--Quiz box footer-->
+        <footer>
+            <div class="total_que">
+                <span>2 Of 10 Questions</span>
+            </div>
+            <button class="next_btn"> Click Next </button>
+        </footer>
+    </div>
+
+    <!--Result Box-->
+    <div class="result_box">
+        <div class="message"></div>
+        <div class="icon">
+            <div class="icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <p>Your score is: <span id="user-score">2</span> out of <span>10</span></p>
+
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+
+
+    <!--Inside this JavaScript file I've inserted Questions and Options only-->
+    <script src="assets/js/jsquestions.js"></script>
+    <script src="assets/js/htmlcssquestions.js"></script>
+
+    
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
+    <script src="assets/js/email.min.js"></script>
+
+    <!--Inside this JavaScript file I've coded all Quiz Codes-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
